@@ -1,0 +1,10 @@
+<structure name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure definition="nabu.utils.types.NodeDescription" maxOccurs="unbounded" minOccurs="0" name="siteMaps"/>
+    <structure definition="nabu.web.application.types.WebApplicationInformation" maxOccurs="unbounded" minOccurs="0" name="applications"/>
+    <field name="has" type="java.lang.Boolean"/>
+    <structure definition="nabu.web.sitemap.types.Entry" maxOccurs="unbounded" minOccurs="0" name="entries"/>
+    <structure definition="nabu.utils.types.NodeDescription" maxOccurs="unbounded" minOccurs="0" name="renderers"/>
+    <field minOccurs="0" name="rendererId" type="java.lang.String"/>
+</structure>
